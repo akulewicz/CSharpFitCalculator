@@ -2,11 +2,11 @@
 using static System.Math;
 namespace Bmi
 {
-	public class BmiCalculatorService
-	{
+    public class BmiCalculatorService
+    {
 
-		public BmiCalculator? CalculateBmiView()
-		{
+        public BmiCalculator? CalculateBmiView()
+        {
             Console.WriteLine("Podaj swój wzrost w metrach (np. 1.83):");
             string heightFromInput = Console.ReadLine();
             Console.WriteLine("Podaj wagę:");
@@ -48,6 +48,6 @@ namespace Bmi
             };
             return bmiDefinition;
         }
-	}
+    }
 }
 
