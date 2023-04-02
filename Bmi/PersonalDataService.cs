@@ -2,10 +2,10 @@
 using static System.Math;
 namespace Bmi
 {
-    public class BmiCalculatorService
+    public class PersonalDataService
     {
 
-        public BmiCalculator? CalculateBmiView()
+        public PersonalData? CalculateBmiView()
         {
             Console.WriteLine("Podaj swój wzrost w metrach (np. 1.83):");
             string heightFromInput = Console.ReadLine();
@@ -19,14 +19,14 @@ namespace Bmi
 
             if (isWeightValid && isHeightValid)
             {
-                BmiCalculator bmi = new BmiCalculator() { Weight = weight, Height = height };
+                PersonalData bmi = new PersonalData() { Weight = weight, Height = height };
                 return bmi;
             }
             return null;
         }
 
 
-        public double CalculateBmi(BmiCalculator bmiData)
+        public double CalculateBmi(PersonalData bmiData)
         {
             double result = Round((bmiData.Weight / Pow(bmiData.Height, 2)), 2);
             return result;

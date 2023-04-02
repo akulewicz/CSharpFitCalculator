@@ -9,7 +9,7 @@ class Program
     {
         Console.WriteLine("Kalkulator BMI");
 
-        BmiCalculatorService bmiService = new BmiCalculatorService();
+        PersonalDataService bmiService = new PersonalDataService();
 
         var bmiData = bmiService.CalculateBmiView();
         if (bmiData != null)

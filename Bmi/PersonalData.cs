@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Bmi
 {
-	public class BmiCalculator
+	public class PersonalData
 	{
 		public double Weight { get; set; }
 
